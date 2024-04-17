@@ -1,0 +1,21 @@
+{
+  "name": "prettier",
+  "description": "prettier config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "nizhdanov",
+    "url": "https://github.com/nizhdanov"
+  },
+  "bugs": {
+    "url": "https://github.com/nizhdanov/core/issues"
+  },
+  "homepage": "https://github.com/nizhdanov/core",
+  "repository": {
+    "url": "https://github.com/nizhdanov/core"
+  },
+  "peerDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

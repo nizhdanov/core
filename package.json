@@ -1,15 +1,26 @@
 {
-  "name": "core",
+  "name": "nizhdanov-core",
+  "version": "1.0.0",
+  "license": "MIT",
   "private": true,
+  "author": {
+    "name": "nizhdanov",
+    "url": "https://github.com/nizhdanov"
+  },
+  "bugs": {
+    "url": "https://github.com/nizhdanov/core/issues"
+  },
+  "homepage": "https://github.com/nizhdanov/core",
+  "repository": {
+    "url": "https://github.com/nizhdanov/core"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "turbo format"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
@@ -18,7 +29,6 @@
   },
   "packageManager": "yarn@1.22.22",
   "workspaces": [
-    "apps/*",
     "packages/*"
   ]
 }
