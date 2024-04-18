@@ -1,6 +1,6 @@
 {
   "name": "nizhdanov-core",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "license": "MIT",
   "private": true,
   "author": {
@@ -21,7 +21,6 @@
     "format": "turbo format"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
     "turbo": "latest"
   },
   "engines": {
