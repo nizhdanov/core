@@ -1,8 +1,12 @@
 {
-  "name": "prettier",
+  "name": "@nizhdanov/prettier",
   "description": "prettier config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
+  "files": [
+    ".prettierrc.base.mjs",
+    ".prettierrc.tw.mjs"
+  ],
   "license": "MIT",
   "author": {
     "name": "nizhdanov",
@@ -15,7 +19,14 @@
   "repository": {
     "url": "https://github.com/nizhdanov/core"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14"
   }
 }
