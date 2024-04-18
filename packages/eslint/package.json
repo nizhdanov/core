@@ -1,0 +1,39 @@
+{
+  "name": "@nizhdanov/eslint",
+  "description": "eslint config",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "eslint.config.node.mjs",
+    "eslint.config.react.mjs"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "nizhdanov",
+    "url": "https://github.com/nizhdanov"
+  },
+  "bugs": {
+    "url": "https://github.com/nizhdanov/core/issues"
+  },
+  "homepage": "https://github.com/nizhdanov/core",
+  "repository": {
+    "url": "https://github.com/nizhdanov/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "dependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-react": "^7.34.1"
+  },
+  "devDependencies": {
+    "@nizhdanov/prettier": "*"
+  }
+}
