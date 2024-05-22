@@ -1,6 +1,3 @@
-import base from './.prettierrc.base.mjs';
-import tw from './.prettierrc.tw.mjs';
-
-const prettier = { base: base, tw: tw };
+import prettier from './.prettierrc.mjs';
 
 export { prettier };

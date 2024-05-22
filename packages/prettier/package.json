@@ -1,12 +1,11 @@
 {
   "name": "@nizhdanov/prettier",
   "description": "prettier config",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "files": [
-    ".prettierrc.base.mjs",
-    ".prettierrc.tw.mjs"
+    ".prettierrc.mjs"
   ],
   "license": "MIT",
   "author": {
@@ -27,7 +26,6 @@
     "prettier": "^3.2.5"
   },
   "dependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.14"
+    "prettier": "^3.2.5"
   }
 }
