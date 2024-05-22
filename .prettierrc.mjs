@@ -1,3 +1,3 @@
 import { prettier } from '@nizhdanov/prettier';
 
-export default prettier.base;
+export default prettier;
