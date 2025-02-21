@@ -21,7 +21,7 @@
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "eslint . --fix",
-    "format": "prettier ."
+    "format": "prettier --write"
   },
   "dependencies": {
     "prettier": "^3.5.1",
@@ -30,5 +30,13 @@
   },
   "devDependencies": {
     "@nizhdanov/typescript": "*"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts": [
+      "prettier --write"
+    ]
   }
 }

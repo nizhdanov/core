@@ -35,5 +35,15 @@
   "devDependencies": {
     "@nizhdanov/prettier": "*",
     "@nizhdanov/typescript": "*"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }
