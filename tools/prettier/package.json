@@ -20,7 +20,6 @@
   "scripts": {
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "lint": "eslint . --fix",
     "format": "prettier --write"
   },
   "dependencies": {
