@@ -1,7 +1,7 @@
 {
   "name": "@nizhdanov/eslint",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "eslint config",
   "author": {
     "name": "nizhdanov",
@@ -35,26 +35,19 @@
     "dev": "tsup src/index.ts --format esm --dts --watch",
     "build": "tsup src/index.ts --format esm --dts --minify",
     "lint": "eslint . --fix",
-    "format": "prettier . --write",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.4.0",
-    "eslint": "^9.21.0",
+    "@antfu/eslint-config": "^4.12.0",
+    "eslint": "^9.25.1",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "@nizhdanov/prettier": "*",
     "@nizhdanov/typescript": "*"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint --fix"
-    ],
-    "*.ts": [
-      "prettier --write",
+    "*.{js,ts}": [
       "eslint --fix"
     ]
   }
