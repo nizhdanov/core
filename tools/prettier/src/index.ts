@@ -1,6 +1,6 @@
 import type { Config } from 'prettier';
 
-export const prettier = (config: Config) => ({
+export const defineConfig = (config?: Config) => ({
   printWidth: 100,
   singleQuote: true,
   jsxSingleQuote: true,

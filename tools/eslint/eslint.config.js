@@ -1,3 +1,3 @@
-import { eslint } from '@nizhdanov/eslint';
+import { defineConfig } from '@nizhdanov/eslint';
 
-export default eslint({ type: 'lib', typescript: true, stylistic: true });
+export default defineConfig({ type: 'lib', typescript: true, stylistic: true });

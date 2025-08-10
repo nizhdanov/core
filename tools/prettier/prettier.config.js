@@ -1,3 +1,3 @@
-import { prettier } from '@nizhdanov/prettier';
+import { defineConfig } from '@nizhdanov/prettier';
 
-export default prettier();
+export default defineConfig();

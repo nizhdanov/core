@@ -1,16 +1,18 @@
 {
   "name": "@nizhdanov/eslint",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "eslint config",
   "author": {
     "name": "nizhdanov",
     "url": "https://github.com/nizhdanov"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/nizhdanov/core",
   "repository": {
-    "url": "https://github.com/nizhdanov/core"
+    "type": "git",
+    "url": "git+https://github.com/nizhdanov/core.git",
+    "directory": "tools/eslint"
   },
   "bugs": {
     "url": "https://github.com/nizhdanov/core/issues"
@@ -35,20 +37,22 @@
     "dev": "tsup src/index.ts --format esm --dts --watch",
     "build": "tsup src/index.ts --format esm --dts --minify",
     "lint": "eslint . --fix",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
-  "dependencies": {
-    "@antfu/eslint-config": "^4.12.0",
-    "eslint": "^9.25.1",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.3"
+  "peerDependencies": {
+    "@antfu/eslint-config": ">=5.0.0 <6",
+    "eslint": ">=9.0.0 <10",
+    "typescript": ">=5.0.0 <6"
   },
   "devDependencies": {
-    "@nizhdanov/typescript": "*"
+    "@antfu/eslint-config": "^5.2.0",
+    "@nizhdanov/typescript": "workspace:*",
+    "@types/node": "^24.2.1",
+    "eslint": "^9.33.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
   },
   "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix"
-    ]
+    "*": "eslint --fix"
   }
 }

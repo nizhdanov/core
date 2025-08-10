@@ -1,16 +1,18 @@
 {
   "name": "@nizhdanov/prettier",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "prettier config",
   "author": {
     "name": "nizhdanov",
     "url": "https://github.com/nizhdanov"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/nizhdanov/core",
   "repository": {
-    "url": "https://github.com/nizhdanov/core"
+    "type": "git",
+    "url": "git+https://github.com/nizhdanov/core.git",
+    "directory": "tools/prettier"
   },
   "bugs": {
     "url": "https://github.com/nizhdanov/core/issues"
@@ -35,22 +37,19 @@
     "dev": "tsup src/index.ts --format esm --dts --watch",
     "build": "tsup src/index.ts --format esm --dts --minify",
     "format": "prettier . --write",
-    "prepublishOnly": "npm run build"
-  },
-  "dependencies": {
-    "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
-    "@nizhdanov/typescript": "*"
+    "@nizhdanov/typescript": "workspace:*",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "prettier": ">=3.0.0 <4",
+    "typescript": ">=5.0.0 <6"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write"
-    ],
-    "*.ts": [
-      "prettier --write"
-    ]
+    "*": "prettier --write --ignore-unknown"
   }
 }

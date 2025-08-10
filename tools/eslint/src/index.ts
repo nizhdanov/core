@@ -1,9 +1,6 @@
 import antfu from '@antfu/eslint-config';
 
-type Options = Parameters<typeof antfu>[0];
-type UserConfigs = Array<Parameters<typeof antfu>[1]>;
-
-export const eslint = (options: Options, ...configs: UserConfigs) => {
+export const defineConfig: typeof antfu = (options, ...configs) => {
   if (options?.stylistic ?? true) {
     configs.unshift(
       {
