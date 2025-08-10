@@ -13,20 +13,16 @@
   },
   "devDependencies": {
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.1",
-    "turbo": "^2.4.2",
-    "typescript": "^5.7.3"
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5",
+    "typescript": "^5.9.2"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "npm@11.0.0",
-  "workspaces": [
-    "packages/*",
-    "tools/*"
-  ],
+  "packageManager": "pnpm@10.14.0",
   "dependencies": {
-    "@changesets/cli": "^2.28.1"
+    "@changesets/cli": "^2.29.5"
   }
 }
